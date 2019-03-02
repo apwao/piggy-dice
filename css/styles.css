@@ -7,12 +7,14 @@ div #player1{
   border: solid blue;
   border-radius: 15px;
   background-color:black;
+  font-family: 'Lobster Two', cursive;
 }
 div #player2{
   height: 300px;
   border: solid blue;
   border-radius: 15px;
   background-color: black;
+  font-family: 'Lobster Two', cursive;
 }
 div #name1{
   padding: 30px;
@@ -26,6 +28,7 @@ div #score1{
   background-color: black;
   color: cornflowerblue;
   padding: 20px;
+  font-family: 'Lobster Two', cursive;
 }
 div #score2{
   border: solid blue;
@@ -33,4 +36,5 @@ div #score2{
   background-color: black;
   color: cornflowerblue;
   padding: 20px;
+  font-family: 'Lobster Two', cursive;
 }
