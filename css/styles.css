@@ -1,7 +1,3 @@
-
-h1{
-  color: blue;
-}
 div #player1{
   height: 300px;
   border: solid blue;
@@ -53,4 +49,13 @@ div #gamerules{
 }
 .player2{
   color: cornflowerblue;
+}
+#scoreboard1{
+  width: 100px;
+  height: 100px;
+  background-color: cornflowerblue;
+  font-family:'Great Vibes', cursive;
+  text-align: center;
+  padding-top: 20px;
+  border-radius: 15px;
 }
