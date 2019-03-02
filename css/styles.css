@@ -2,3 +2,15 @@
 h1{
   color: blue;
 }
+div #player1{
+  height: 300px;
+  border: solid blue;
+  border-radius: 15px;
+  background-color: blue;
+}
+div #player2{
+  height: 300px;
+  border: solid blue;
+  border-radius: 15px;
+  background-color: black;
+}
