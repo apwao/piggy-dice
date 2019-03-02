@@ -46,7 +46,11 @@ div #score2{
 }
 div #gamerules{
   color: cornflowerblue;
-  font-size: 20px;
+  font-size: 25px;
   border-style: inset;
   background-color:black;
+  font-family:'Great Vibes', cursive;
+}
+.player2{
+  color: cornflowerblue;
 }
