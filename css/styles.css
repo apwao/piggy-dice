@@ -4,13 +4,33 @@ h1{
 }
 div #player1{
   height: 300px;
-  border: solid black;
+  border: solid blue;
   border-radius: 15px;
-  background-color: blue;
+  background-color:black;
 }
 div #player2{
   height: 300px;
   border: solid blue;
   border-radius: 15px;
   background-color: black;
+}
+div #name1{
+  padding: 30px;
+}
+div #name2{
+  padding: 30px;
+}
+div #score1{
+  border: solid blue;
+  border-bottom-right-radius: 15px;
+  background-color: black;
+  color: cornflowerblue;
+  padding: 20px;
+}
+div #score2{
+  border: solid blue;
+  border-bottom-right-radius: 15px;
+  background-color: black;
+  color: cornflowerblue;
+  padding: 20px;
 }
