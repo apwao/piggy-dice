@@ -43,6 +43,10 @@ div #score2{
   height: 100px;
   background-color: blue;
   font-family:'Lobster Two', cursive;
-
-
+}
+div #gamerules{
+  color: cornflowerblue;
+  font-size: 20px;
+  border-style: inset;
+  background-color:black;
 }
