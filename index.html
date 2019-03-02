@@ -8,25 +8,54 @@
         <title>piggy_dice</title>
     </head>
     <body class="container" background="images/background.jpg">
-        <div class="jumbotron"></div>
+        <div>
+            <div class="jumbotron"></div>
+        </div>
         <div class="row">
-            <div class="col-md-5" id="player1">
+            <div class="col-md-5" id="player1" background="images/background2.jpeg">
                 <div class="border">
                     <h2>player1</h2>
                     <hr>
-                    <button class="btn btn-primary">roll</button>
-                    <button class="btn btn-primary">hold</button>
+                    <div id="name1">
+                        <p> Player name:</p>
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-primary">roll</button>
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-primary">hold</button>
+                    </div>
                 </div>
             </div>
             <div class="col-md-2"></div>
-            <div class="col-md-5" id="player2">
+            <div class="col-md-5" id="player2" >
                 <div class="playertwo">
                     <h2>player2</h2>
                     <hr>
-                    <button class="btn btn-primary">roll</button>
-                    <button class="btn btn-primary">hold</button>
+                    <div id="name2">
+                        <p>Player name:</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <button class="btn btn-primary">roll</button>
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-primary">hold</button>
+                        </div>
+                    </div>
                 </div>
             </div> 
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-4" id="score1">
+               <p>Current score:</p> 
+            </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4" id="score2">
+                <p>Current score:</p>
+            </div>
         </div>
     </body>
 </html>
