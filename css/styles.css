@@ -4,7 +4,7 @@ h1{
 }
 div #player1{
   height: 300px;
-  border: solid blue;
+  border: solid black;
   border-radius: 15px;
   background-color: blue;
 }
