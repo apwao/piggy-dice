@@ -1,23 +1,29 @@
-
+// Business logic
 var total1=0;
 var total2=0;
 var scores1=[]
 var scores2 =[]
-var getScore1 =scores1.forEach(function(score){
-    total1 += score
+var getScore1 =scores1.forEach(function(score1){
+    total1 += score1
 })
+
+
+
+
 //User Logic
 //Display roll value on the dice for player1
 $(document).ready(function(){
     $("#player1 #roll1").click(function(){
         //Displays roll value on roll board
-        var rollPlayer1 =$("#scoreboard1 h1").text(Math.floor(Math.random() * 6) + 1)
+        //  var rollPlayer1 =
+       $("#scoreboard1 h1").text(Math.floor(Math.random() * 6) + 1)
         //Retrieves the value on the dice
         var rollValue1 = $("#scoreboard h1").text()
+        //Push to array
         scores1.push(rollValue1)
-        $("#displayTotal1 #holdScore").text(total1)
-        
+        $("#displayTotal1 #holdScore1").text(total1)
     })
+    
 })
 //Display roll value on dice for player2
 $(document).ready(function(){
@@ -26,6 +32,7 @@ $(document).ready(function(){
         var rollPlayer2=$("#scoreboard2 h1").text(Math.floor(Math.random() * 6) + 1)
         var rollValue2 = $("#scoreboard2 h1").text()
         scores2.push(rollPlayer2);
+        $("#displayTotal2 #holdScore2").text(total2)
     
     })
 })
