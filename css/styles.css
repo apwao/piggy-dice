@@ -1,16 +1,18 @@
 div #player1{
   height: 300px;
-  border: solid blue;
+  border: solid yellow;
   border-radius: 15px;
   background-color:black;
   font-family: 'Lobster Two', cursive;
+  color: azure;
 }
 div #player2{
   height: 300px;
-  border: solid blue;
+  border: solid yellow;
   border-radius: 15px;
   background-color: black;
   font-family: 'Lobster Two', cursive;
+  color: azure;
 }
 div #name1{
   padding: 30px;
@@ -18,16 +20,16 @@ div #name1{
 div #name2{
   padding: 30px;
 }
-div #score1{
-  border: solid blue;
+div #displayTotal1{
+  border: solid yellow;
   border-bottom-right-radius: 15px;
   background-color: black;
   color: cornflowerblue;
   padding: 10px;
   font-family: 'Lobster Two', cursive;
 }
-div #score2{
-  border: solid blue;
+div #displayTotal2{
+  border: solid yellow;
   border-bottom-right-radius: 15px;
   background-color: black;
   color: cornflowerblue;
@@ -37,8 +39,11 @@ div #score2{
 #header{
   width: 100%;
   height: 100px;
-  background-color: blue;
+  background-color: black;
   font-family:'Lobster Two', cursive;
+  border: solid yellow;
+  color: azure;
+
 }
 div #gamerules{
   color: cornflowerblue;
