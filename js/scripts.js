@@ -10,12 +10,12 @@ var getScore1 =scores1.forEach(function(score){
 //Display roll value on the dice for player1
 $(document).ready(function(){
     $("#player1 #roll1").click(function(){
-        //var roll = Math.floor(Math.random() * 6) + 1)
         //Displays roll value on roll board
         var rollPlayer1 =$("#scoreboard1 h1").text(Math.floor(Math.random() * 6) + 1)
         //Retrieves the value on the dice
-        var rollValue = $("#scoreboard h1").text()
-        scores1.push(rollValue);
+        var rollValue1 = $("#scoreboard h1").text()
+        scores1.push(rollValue1)
+        $("#displayTotal1 #holdScore").text(total1)
         
     })
 })
@@ -24,33 +24,46 @@ $(document).ready(function(){
     $("#player2 #roll2").click(function(){
         //var roll = Math.floor(Math.random() * 6) + 1)
         var rollPlayer2=$("#scoreboard2 h1").text(Math.floor(Math.random() * 6) + 1)
+        var rollValue2 = $("#scoreboard2 h1").text()
         scores2.push(rollPlayer2);
+    
     })
 })
 
-// Implement hold functionality for player1
+// // Implement hold functionality for player1
 //  $(document.ready(function(){
 //     $("#player1 #hold1").click(function(){
-//         var holdPlayer1=$("#scoreboard1 h1").text() 
+//         var holdPlayer1=$("#displayTotal1 #holdScore").text(getScore1()) 
 //     })
-
-//         var holdPlayer1= $("#scoreboard1 h1").text()
-//          alert("yipee ki yaay");
-//      })
-//  })
-
-// //Implement hold value for player2
-
-
-
-
-
-
-$(document).ready(function(){
-    $("").click(function(){
-        scores1.each(function(){
-            var total = scores1[0]
-        })
-    })
+//$(document).ready(function(){
+    $("#player1 #hold1").click(function(){
+         $("#displayTotal1 #holdScore").text(total1)
 })
+
+
+
+
+
+
+
+
+// //         var holdPlayer1= $("#scoreboard1 h1").text()
+// //          alert("yipee ki yaay");
+// //      })
+// //  })
+
+// // //Implement hold value for player2
+
+
+
+
+
+
+// $(document).ready(function(){
+//     $("").click(function(){
+//         scores1.each(function(){
+//             var total = scores1[0]
+//         })
+//     })
+// })
 
