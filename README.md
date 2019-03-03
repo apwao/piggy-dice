@@ -11,6 +11,7 @@ The web page can be viewed on GitHub pages at: https://apwao.github.io/piggy-dic
 * Open the files using a web browser of your choice.
 * Internet connection is required to access the links therein.
 ##BDD
+![](images/BDD.png)
 ## Known Bugs
 * Hold buttons don't display the current score
 ## Technologies Used
