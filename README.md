@@ -1,4 +1,4 @@
-#Pig Dice
+# Pig Dice
 #### A dice game for two players where users roll the dice an accumulate points based on the value rolled. First player to reach 100 points wins. 3rd March, 2019
 #### By **[Purity Sowayi]** (https://github.com/apwao)
 ## Description
@@ -10,8 +10,9 @@ The web page can be viewed on GitHub pages at: https://apwao.github.io/piggy-dic
 * Clone the repository from GitHub into your local computer by typing ($ git clone https://github.com/apwao/piggy-dice.git) in the terminal.
 * Open the files using a web browser of your choice.
 * Internet connection is required to access the links therein.
-##BDD
+## BDD
 ![](images/BDD.png)
+
 ## Known Bugs
 * Hold buttons don't display the current score
 ## Technologies Used
