@@ -59,3 +59,12 @@ div #gamerules{
   padding-top: 20px;
   border-radius: 15px;
 }
+#scoreboard2{
+  width: 100px;
+  height: 100px;
+  background-color: cornflowerblue;
+  font-family:'Great Vibes', cursive;
+  text-align: center;
+  padding-top: 20px;
+  border-radius: 15px;
+}
