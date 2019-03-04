@@ -1,4 +1,5 @@
 // Business logic
+
 var total1=0;
 var total2=0;
 var scores1=[]

@@ -4,82 +4,45 @@
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
         <link href="css/styles.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
         <script src="js/jquery-3.3.1.js"></script>
         <script src="js/scripts.js"></script>
-        <title>piggy_dice</title>
+        <title>piggy-dice</title>
     </head>
-    <body class="container" background="images/background.jpg">
-        <div class="row" id="header">
-            <div class="col-md-4">
-                <img src="images/yellow_pig.jpeg">
-            </div>
-            <div class="col-md-4">
-                <h2>Pig Dice</h2>
-                <h4>let's roll!</h4>
-            </div>
-        </div>
-        </div>
-        <br>
-        <br>
-        <hr>
+    <body background="images/background.jpg">
         <div class="row">
-            <div class="col-md-5" id="player1" background="images/background2.jpeg">
-                <div>
-                    <h2>player1</h2>
-                    <hr>
-                    <div id="name1">
-                        <p> Player name:</p>
-                    </div>
-                    <div class="col-md-2">
-                        <button class="btn btn-primary btn-outline" id="roll1" type="submit">roll</button>
-                    </div>
-                    <div class="col-md-2">
-                        <button class="btn btn-primary" type="submit" id="hold1">hold</button>
-                    </div>
-                    <div class="col-md-4"></div>
-                    <div class="col-md-5" id="scoreboard1">
-                        <p>Roll board</p>
-                        <h1>0</h1>
-                    </div>
-                </div>
+            <div class="col-md-0.5"></div>
+            <div class="col-md-4" id="gamerules">
+                <h2>Rules of the game</h2>
+                <ol>
+                    <li>Choose a player to go first. Player throws a die and scores 
+                        as many points as the total shown on the die provided the die doesn’t roll a 1. </li>
+                    <li>Player continues rolling and accumulating points at risk of rolling a 1 or holds.</li>
+                    <li>If player rolls a 1 his turn is over, he loses all points accumulated during that turn, he passes the die.</li>
+                    <li>Play passes from player to player until a winner is determined.</li>
+                    <li>The first player to accumulate 100 or more points wins the game.</li>
+                </ol>
             </div>
-            <div class="col-md-2"></div>
-            <div class="col-md-5" id="player2" >
-                <div class="playertwo">
-                    <h2>player2</h2>
-                    <hr>
-                    <div id="name2">
-                        <p>Player name:</p>
+            <div class="col-md-2"><h1 id="title">Pig Dice</h1></div>
+            <div class="col-md-6" class="inline-buttons" id="play">
+                <form action="dashboard.html">
+                    <div class="form-group">
+                        <label for="name_field">
+                            <input type="text" class="form-control" id="name_input" name="player_name" placeholder="Player1 Name">
+                        </label>
                     </div>
-                    <div class="row">
-                        <div class="col-md-2">
-                            <button class="btn btn-primary" id="roll2" type="submit">roll</button>
+                    <br>
+                    <div class="form-group">
+                            <label for="name_field">
+                                <input type="text" class="form-control" id="name_input" name="player_name" placeholder="Player2 Name">
+                            </label>
                         </div>
-                        <div class="col-md-2">
-                            <button class="btn btn-primary" type="submit">hold</button>
-                        </div>
-                        <div class="col-md-4"></div>
-                        <div class="col-md-5" id="scoreboard2">
-                            <p>Roll board</p>
-                            <h1>0</h1>
-                        </div>
-                    </div>
-                </div>
-            </div> 
-        </div>
-        <br>
-        <br>
-        <div class="row">
-            <div class="col-md-4" id="displayTotal1">
-               <p>Current score:</p> 
-               <h2 id="holdScore1"></h2>
-            </div>
-            <div class="col-md-4"></div>
-            <div class="col-md-4" id="displayTotal2">
-                <p>Current score:</p>
-                <h2 id="holdScore2"></h2>
+                    <br>
+                    <br>
+                    <button class="btn btn-warning btn-lg" id="bt-comp">Play with computer</button>
+                    <button class="btn btn-warning btn-lg" id="bt-person">Play with person</button>
+                </form>
             </div>
         </div>
-        <footer>designed by sowasse</footer>
     </body>
 </html>
