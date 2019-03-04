@@ -47,10 +47,12 @@ div #displayTotal2{
 }
 div #gamerules{
   color: cornflowerblue;
-  font-size: 25px;
+  font-size: 29px;
+  border: yellow;
   border-style: inset;
   background-color:black;
   font-family:'Great Vibes', cursive;
+
 }
 .player2{
   color: cornflowerblue;
@@ -72,4 +74,34 @@ div #gamerules{
   text-align: center;
   padding-top: 20px;
   border-radius: 15px;
+}
+#play{
+  position: relative;
+  top: 200px;
+  font-family: 'Great Vibes', cursive;
+  font-size: 30px;
+
+}
+#play #name_input{
+  padding: 30px;
+  font-size: 30px;
+  color: cornflowerblue;
+  font-family: 'Great Vibes', cursive;
+  background-color: 241,241,155;
+}
+#title{
+  color:yellow;
+  font-family: 'Great Vibes', cursive;
+  position: relative;
+  left: 200px;
+  font-size: 53px;
+  font-weight: bold
+}
+form #bt-comp{
+  background-color: 241,241,155;
+} 
+}
+form #bt-person{
+  background-color: 241,241,155;
+}
 }
