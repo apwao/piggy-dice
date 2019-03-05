@@ -40,12 +40,11 @@ Roll.prototype.hold = function(){
 $(document).ready(function(){
     $("#player1 #roll1").click(function(){
         //Displays roll value on roll board
-        //  var rollPlayer1 =
-       $("#scoreboard1 h1").text(Math.floor(Math.random() * 6) + 1)
+       var rollPlayer1 = $("#scoreboard1 h1").text(Math.floor(Math.random() * 6) + 1)
         //Retrieves the value on the dice
-        var rollValue1 = $("#scoreboard h1").text()
-        //Push to array
-        scores1.push(rollValue1)
+        var rollValue1 = parseInt($("#scoreboard1 h1").text())
+        total1 += rollValue1;
+        //scores1.push(rollValue1)
         $("#displayTotal1 #holdScore1").text(total1)
     })
     
@@ -53,19 +52,23 @@ $(document).ready(function(){
 //Display roll value on dice for player2
 $(document).ready(function(){
     $("#player2 #roll2").click(function(){
-        //var roll = Math.floor(Math.random() * 6) + 1)
-        var rollPlayer2=$("#scoreboard2 h1").text(Math.floor(Math.random() * 6) + 1)
-        var rollValue2 = $("#scoreboard2 h1").text()
-        scores2.push(rollPlayer2);
+        var rollPlayer2 = $("#scoreboard2 h1").text(Math.floor(Math.random() * 6) + 1)
+        var rollValue2 = parseInt($("#scoreboard2 h1").text())
+        // scores2.push(rollPlayer2);
+        total2 = total2+=rollValue2;
         $("#displayTotal2 #holdScore2").text(total2)
     
     })
 })
  // Implement hold functionality for player1
     $("#player1 #hold1").click(function(){
+        if (total2 === 100){
+
+        };
          $("#displayTotal1 #holdScore").text(total1)
          alert("Your turn is over! pass to the next player")
 })
+
 
 
 
