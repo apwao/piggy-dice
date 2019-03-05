@@ -85,7 +85,7 @@ div #gamerules{
 #play #name_input{
   padding: 30px;
   font-size: 30px;
-  color: cornflowerblue;
+  color: yellow;
   font-family: 'Great Vibes', cursive;
   background-color: 241,241,155;
 }
@@ -97,11 +97,11 @@ div #gamerules{
   font-size: 53px;
   font-weight: bold
 }
-form #bt-comp{
+form .start #bt-comp{
   background-color: 241,241,155;
 } 
 }
-form #bt-person{
+form .start #bt-person{
   background-color: 241,241,155;
 }
 }
