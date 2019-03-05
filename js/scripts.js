@@ -28,12 +28,7 @@ Roll.prototype.hold = function(){
     }
 }
  var total1=0;
- var total2=0;
- var scores1=[]
- var scores2 =[]   
- var getScore1 =scores1.forEach(function(score1){
-     total1 += score1
- })
+ var total2=0;  
 
 //User Logic
 //Display roll value on the dice for player1
@@ -43,9 +38,12 @@ $(document).ready(function(){
        var rollPlayer1 = $("#scoreboard1 h1").text(Math.floor(Math.random() * 6) + 1)
         //Retrieves the value on the dice
         var rollValue1 = parseInt($("#scoreboard1 h1").text())
-        total1 += rollValue1;
-        //scores1.push(rollValue1)
-        $("#displayTotal1 #holdScore1").text(total1)
+            if (rollPlayer1 === 1){
+                $("#displayTotal1 #holdScore1").text("0")   
+            }
+            else{
+            total1 += rollValue1;
+            $("#displayTotal1 #holdScore1").text(total1)}
     })
     
 })
@@ -54,46 +52,17 @@ $(document).ready(function(){
     $("#player2 #roll2").click(function(){
         var rollPlayer2 = $("#scoreboard2 h1").text(Math.floor(Math.random() * 6) + 1)
         var rollValue2 = parseInt($("#scoreboard2 h1").text())
-        // scores2.push(rollPlayer2);
         total2 = total2+=rollValue2;
         $("#displayTotal2 #holdScore2").text(total2)
+        if (total2 === 100){
+            $("#displayTotal2 #holdScore2").text("You are the winner!")
+        }
     
     })
 })
  // Implement hold functionality for player1
     $("#player1 #hold1").click(function(){
         if (total2 === 100){
-
-        };
-         $("#displayTotal1 #holdScore").text(total1)
-         alert("Your turn is over! pass to the next player")
+         alert("Your turn is over! pass to the next player")}
 })
-
-
-
-
-
-
-
-
-
-//          var holdPlayer1= $("#scoreboard1 h1").text()
-//           alert("yipee ki yaay");
-//       })
-//  })
-
-// Implement hold value for player2
-
-
-
-
-
-
-// $(document).ready(function(){
-//  $("").click(function(){
-//        scores1.each(function(){
-//           var total = scores1[0]
-//          })
-//    })
-//  })
 
